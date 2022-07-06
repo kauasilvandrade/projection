@@ -1,0 +1,344 @@
+/* PERMITIR ACENTUAÇÕES  */
+@charset "UTF-8";
+
+/* FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+/* CONFIGURAÇÕES GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PALETA DE CORES  */
+:root {
+    --cor0: #ffffff;
+    --cor1: #8dcca9;
+    --cor2: #6cc091;
+    --cor3: #4bae77;
+    --cor4: #ffffffbd;
+}
+
+/* CORPO */
+body {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    position: relative;
+    padding: 48px 0 140px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-image: url('imagens/banner.jpg');
+    margin-bottom: 116px;
+}
+
+.cabecalho::before {
+    content: '';
+    background: rgba(75, 75, 93, 0.85);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.cabecalho-2{
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 4em;
+    position: relative;
+    margin-bottom: 116px;
+}
+
+.cabecalho-2 .nome-logo {}
+
+.cabecalho-2 .nome-logo > h1 {
+    font-size: 1em;
+    color: var(--cor0);
+    font-weight: 400;
+}
+
+.cabecalho-2 .nome-logo h1 strong {
+    font-weight: 600;
+}
+
+/* MENU */
+.cabecalho-2 .menu {}
+
+.cabecalho-2 .menu .lista-menu {
+    list-style: none;
+    display: flex;
+}
+
+.cabecalho-2 .menu .lista-menu .item-menu {
+    padding: 0 15px;
+}
+
+.cabecalho-2 .menu .lista-menu .item-menu a {
+    text-decoration: none;
+    color: var(--cor0);
+}
+
+/* SEÇÃO WELCOME */
+.secao-welcome {
+    position: relative;
+}
+
+.secao-welcome h1 {
+    text-align: center;
+    font-size: 3.5em;
+    margin-bottom: 1.1em;
+    color: var(--cor0);
+    font-weight: 500;
+}
+
+.secao-welcome .projeto-welcome {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4em;
+}
+
+.secao-welcome .projeto-welcome .projeto {
+    text-align: center;
+}
+
+.secao-welcome .projeto-welcome #especial-border {
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.secao-welcome .projeto-welcome .projeto .img-box {
+    margin-bottom: 10px;
+}
+
+.secao-welcome .projeto-welcome .projeto .img-box img {
+    width: 30px;
+}
+
+.secao-welcome .projeto-welcome .projeto h2 {
+    color: var(--cor0);
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.secao-welcome .projeto-welcome .projeto p {
+    color: var(--cor4);
+    font-weight: 500;
+}
+
+.secao-welcome .button-box {}
+
+.secao-welcome .button-box button {
+    padding: 12px 3.3em;
+    border: 3px solid var(--cor2);
+    border-radius: 30px;
+    margin: auto;
+    color: var(--cor2);
+    display: block;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.secao-welcome .button-box button:hover {
+    background-color: #6cc0902f;
+    transition: .5s;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.conteudo-principal {}
+
+.conteudo-principal article {
+    margin-bottom: 116px;
+}
+
+.conteudo-principal article .anuncios {
+    display: flex;
+    justify-content: space-around;
+}
+
+.conteudo-principal article .anuncios .anuncio-box  {
+    width: 400px;
+}
+
+.conteudo-principal article .anuncios .anuncio-box .imagem-box {
+    margin-bottom: 1.5em;
+}
+
+.conteudo-principal article .anuncios .anuncio-box .imagem-box img {
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.conteudo-principal article .anuncios .anuncio-box h3 {
+    font-size: 1.8em;
+    text-align: center;
+    max-width: 223px;
+    margin: auto;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 1.5em;
+    color: #555;
+}
+
+.conteudo-principal article .anuncios .anuncio-box p {
+    text-align: center;
+    line-height: 25px;
+    color: #9a9a9a;
+    margin-bottom: 1.5em;
+}
+
+.conteudo-principal article .anuncios .anuncio-box button {
+    padding: 12px 3.3em;
+    border: 3px solid var(--cor2);
+    border-radius: 30px;
+    margin: auto;
+    color: var(--cor2);
+    display: block;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.conteudo-principal article .anuncios .anuncio-box button:hover {
+    background-color: #6cc09048;
+    transition: .5s;
+}
+
+/* SEÇÃO FORMULÁRIO */
+.secao-form {
+    background-color: var(--cor2);
+    padding: 6em 0;
+}
+
+.secao-form form {} 
+
+.secao-form form h2 {
+    text-align: center;
+    color: var(--cor0);
+    font-weight: 400;
+    margin-bottom: 60px;
+    font-size: 1.7em;
+} 
+
+.secao-form form .posicionamento-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 30px;
+} 
+
+.secao-form form .posicionamento-form .input-box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+} 
+
+.secao-form form .posicionamento-form .input-box label {
+    color: var(--cor0);
+    font-weight: 600;
+    margin-bottom: 10px;
+} 
+
+.secao-form form .posicionamento-form .input-box input {
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 2px solid var(--cor1);
+    border-radius: 10px;
+    outline: none;
+} 
+
+.secao-form form .posicionamento-form .input-box input:focus-visible {
+    border-color: #4bae77;
+    box-shadow: 0 0 0 1px #4bae77;
+}
+
+.secao-form form .text-box {
+    margin-bottom: 30px;
+} 
+
+.secao-form form .text-box label {
+    color: var(--cor0);
+    margin-bottom: 10px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+} 
+
+.secao-form form .text-box textarea {
+    border: 1px solid var(--cor3);
+    background-color: transparent;
+    width: 100%;
+    border: 2px solid var(--cor1);
+    outline: none;
+    border-radius: 10px;
+    padding: 20px;
+} 
+
+.secao-form form .text-box textarea:focus-visible {
+    border-color: #4bae77;
+    box-shadow: 0 0 0 1px #4bae77;
+} 
+
+.secao-form form .posicionamento-form .input-box input::placeholder {
+    color: #abfacf;
+    font-weight: 400;
+}
+
+.secao-form form .text-box textarea::placeholder {
+    color: #abfacf;
+    font-weight: 400;
+}
+
+.secao-form form .button-box button{
+    padding: 12px 3.3em;
+    border: 3px solid var(--cor0);
+    border-radius: 30px;
+    margin: auto;
+    color: var(--cor0);
+    display: block;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.secao-form form .button-box button:hover {
+    background-color: #86ebb2c0;
+    transition: .5s;
+}
+
+.secao-form form #button-especial {} 
+
+/* RODAPÉ */
+footer {
+    background-color: var(--cor2);
+}
+
+footer p {
+    padding-bottom: 2em;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer p a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+footer p a:hover {
+    color: var(--cor0);
+}
+
+
+/* RESPONSIVIDADE */
