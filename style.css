@@ -4,6 +4,7 @@
 /* FONTES */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
+
 /* CONFIGURAÇÕES GLOBAIS */
 * {
     margin: 0;
@@ -26,20 +27,20 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 88%;
     margin: auto;
 }
 
 /* CABEÇALHO */
 .cabecalho {
     position: relative;
-    padding: 48px 0 140px 0;
+    padding: 3rem 0 7rem 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
     background-image: url('imagens/banner.jpg');
-    margin-bottom: 116px;
+    margin-bottom: 7rem;
 }
 
 .cabecalho::before {
@@ -56,9 +57,9 @@ body {
     justify-content: space-between;
     display: flex;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    padding-bottom: 4em;
+    padding-bottom: 4rem;
     position: relative;
-    margin-bottom: 116px;
+    margin-bottom: 7rem;
 }
 
 .cabecalho-2 .nome-logo {}
@@ -76,13 +77,29 @@ body {
 /* MENU */
 .cabecalho-2 .menu {}
 
+.cabecalho-2 .menu #botao {
+    display: none;
+}
+
+.cabecalho-2 .menu .checkbtn {}
+
+.cabecalho-2 .menu .checkbtn .fa {
+    display: block;
+    font-size: 1.40em;
+    color: white;
+    margin-right: 1rem;
+    float: right;
+    display: none;
+}
+
+
 .cabecalho-2 .menu .lista-menu {
     list-style: none;
     display: flex;
 }
 
 .cabecalho-2 .menu .lista-menu .item-menu {
-    padding: 0 15px;
+    padding: 0 1rem;
 }
 
 .cabecalho-2 .menu .lista-menu .item-menu a {
@@ -98,7 +115,7 @@ body {
 .secao-welcome h1 {
     text-align: center;
     font-size: 3.5em;
-    margin-bottom: 1.1em;
+    margin-bottom: 4rem;
     color: var(--cor0);
     font-weight: 500;
 }
@@ -106,7 +123,8 @@ body {
 .secao-welcome .projeto-welcome {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 4em;
+    margin-bottom: 4rem;
+    padding: 0 2rem;
 }
 
 .secao-welcome .projeto-welcome .projeto {
@@ -116,21 +134,21 @@ body {
 .secao-welcome .projeto-welcome #especial-border {
     border-left: 2px solid rgba(255, 255, 255, 0.2);
     border-right: 2px solid rgba(255, 255, 255, 0.2);
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 .secao-welcome .projeto-welcome .projeto .img-box {
-    margin-bottom: 10px;
+    margin-bottom: 0.7rem;
 }
 
 .secao-welcome .projeto-welcome .projeto .img-box img {
-    width: 30px;
+   width: 2rem;
 }
 
 .secao-welcome .projeto-welcome .projeto h2 {
     color: var(--cor0);
-    margin-bottom: 5px;
+    margin-bottom: 0.2em;
     font-weight: 500;
 }
 
@@ -142,7 +160,7 @@ body {
 .secao-welcome .button-box {}
 
 .secao-welcome .button-box button {
-    padding: 12px 3.3em;
+    padding: 0.9rem 3.4rem;
     border: 3px solid var(--cor2);
     border-radius: 30px;
     margin: auto;
@@ -150,6 +168,7 @@ body {
     display: block;
     background-color: transparent;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .secao-welcome .button-box button:hover {
@@ -161,7 +180,7 @@ body {
 .conteudo-principal {}
 
 .conteudo-principal article {
-    margin-bottom: 116px;
+    margin-bottom: 7rem;
 }
 
 .conteudo-principal article .anuncios {
@@ -170,11 +189,11 @@ body {
 }
 
 .conteudo-principal article .anuncios .anuncio-box  {
-    width: 400px;
+    width: 23rem;
 }
 
 .conteudo-principal article .anuncios .anuncio-box .imagem-box {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5rem;
 }
 
 .conteudo-principal article .anuncios .anuncio-box .imagem-box img {
@@ -202,7 +221,7 @@ body {
 }
 
 .conteudo-principal article .anuncios .anuncio-box button {
-    padding: 12px 3.3em;
+    padding: 0.9rem 3.4rem;
     border: 3px solid var(--cor2);
     border-radius: 30px;
     margin: auto;
@@ -210,6 +229,7 @@ body {
     display: block;
     background-color: transparent;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .conteudo-principal article .anuncios .anuncio-box button:hover {
@@ -229,7 +249,7 @@ body {
     text-align: center;
     color: var(--cor0);
     font-weight: 400;
-    margin-bottom: 60px;
+    margin-bottom: 3rem;
     font-size: 1.7em;
 } 
 
@@ -237,7 +257,7 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 1.4rem;
 } 
 
 .secao-form form .posicionamento-form .input-box {
@@ -249,12 +269,13 @@ body {
 .secao-form form .posicionamento-form .input-box label {
     color: var(--cor0);
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 1.3rem;
+    font-size: 0.9em;
 } 
 
 .secao-form form .posicionamento-form .input-box input {
     background-color: transparent;
-    padding: 10px 20px;
+    padding: 0.7rem 1.2rem;
     border: 2px solid var(--cor1);
     border-radius: 10px;
     outline: none;
@@ -266,12 +287,12 @@ body {
 }
 
 .secao-form form .text-box {
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 } 
 
 .secao-form form .text-box label {
     color: var(--cor0);
-    margin-bottom: 10px;
+    margin-bottom: 1.3rem;
     font-weight: 600;
     display: flex;
     flex-direction: column;
@@ -284,7 +305,7 @@ body {
     border: 2px solid var(--cor1);
     outline: none;
     border-radius: 10px;
-    padding: 20px;
+    padding: 1.2rem;
 } 
 
 .secao-form form .text-box textarea:focus-visible {
@@ -303,7 +324,7 @@ body {
 }
 
 .secao-form form .button-box button{
-    padding: 12px 3.3em;
+    padding: 0.7rem 3.4em;
     border: 3px solid var(--cor0);
     border-radius: 30px;
     margin: auto;
@@ -311,7 +332,8 @@ body {
     display: block;
     background-color: transparent;
     cursor: pointer;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
 }
 .secao-form form .button-box button:hover {
     background-color: #86ebb2c0;
@@ -328,7 +350,7 @@ footer {
 footer p {
     padding-bottom: 2em;
     text-align: center;
-    font-size: 14px;
+    font-size: 0.8em;
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -342,3 +364,6 @@ footer p a:hover {
 
 
 /* RESPONSIVIDADE */
+@media screen (max-width: 1280px) {
+    
+}
