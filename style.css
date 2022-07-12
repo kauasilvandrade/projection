@@ -1,0 +1,543 @@
+/* PERMITIR ACENTUAÇÕES  */
+@charset "UTF-8";
+
+/* FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+
+/* CONFIGURAÇÕES GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PALETA DE CORES  */
+:root {
+    --cor0: #ffffff;
+    --cor1: #8dcca9;
+    --cor2: #6cc091;
+    --cor3: #4bae77;
+    --cor4: #ffffff8c;
+}
+
+/* CORPO */
+body {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 88%;
+    margin: auto;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    position: relative;
+    background-image: url('imagens/banner.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 3rem 0 7rem 0;
+    margin-bottom: 7rem;
+}
+
+.cabecalho::before {
+    content: '';
+    background: rgba(75, 75, 93, 0.85);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.cabecalho-2{
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 4rem;
+    position: relative;
+    margin-bottom: 7rem;
+}
+
+.cabecalho-2 .nome-logo {}
+
+.cabecalho-2 .nome-logo > h1 {
+    font-size: 1em;
+    color: var(--cor0);
+    font-weight: 400;
+}
+
+.cabecalho-2 .nome-logo h1 strong {
+    font-weight: 600;
+}
+
+/* MENU */
+.cabecalho-2 .menu {}
+
+.cabecalho-2 .menu #botao {
+    display: none;
+}
+
+.cabecalho-2 .menu .checkbtn {
+    float: right;
+    display: none;
+    margin-right: 1rem;
+}
+
+.cabecalho-2 .menu .checkbtn .fa {
+    font-size: 1.40em;
+    color: white;
+}
+
+
+.cabecalho-2 .menu .lista-menu {
+    list-style: none;
+    display: flex;
+}
+
+.cabecalho-2 .menu .lista-menu .item-menu {
+    padding: 0 1rem;
+}
+
+.cabecalho-2 .menu .lista-menu .item-menu a {
+    text-decoration: none;
+    color: var(--cor0);
+}
+
+/* SEÇÃO WELCOME */
+.secao-welcome {
+    position: relative;
+}
+
+.secao-welcome h1 {
+    text-align: center;
+    font-size: 3.5em;
+    margin-bottom: 4rem;
+    color: var(--cor0);
+    font-weight: 500;
+}
+
+.secao-welcome .projeto-welcome {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+    padding: 0 2rem;
+}
+
+.secao-welcome .projeto-welcome .projeto {
+    text-align: center;
+}
+
+.secao-welcome .projeto-welcome #especial-border {
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.secao-welcome .projeto-welcome .projeto .img-box {
+    margin-bottom: 0.7rem;
+}
+
+.secao-welcome .projeto-welcome .projeto .img-box img {
+   width: 2rem;
+}
+
+.secao-welcome .projeto-welcome .projeto h2 {
+    color: var(--cor0);
+    margin-bottom: 0.2em;
+    font-weight: 500;
+}
+
+.secao-welcome .projeto-welcome .projeto p {
+    color: var(--cor4);
+    font-weight: 500;
+}
+
+.secao-welcome .button-box {}
+
+.secao-welcome .button-box button {
+    padding: 0.8rem 2.7rem;
+    border: 3px solid var(--cor2);
+    border-radius: 30px;
+    margin: auto;
+    color: var(--cor2);
+    display: block;
+    background-color: transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.secao-welcome .button-box button:hover {
+    background-color: #6cc0902f;
+    transition: .5s;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.conteudo-principal {}
+
+.conteudo-principal article {
+    margin-bottom: 7rem;
+}
+
+.conteudo-principal article .anuncios {
+    display: flex;
+    justify-content: space-around;
+}
+
+.conteudo-principal article .anuncios .anuncio-box  {
+    width: 23rem;
+}
+
+.conteudo-principal article .anuncios .anuncio-box .imagem-box {
+    margin-bottom: 1.5rem;
+}
+
+.conteudo-principal article .anuncios .anuncio-box .imagem-box img {
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.conteudo-principal article .anuncios .anuncio-box h3 {
+    font-size: 1.8em;
+    text-align: center;
+    max-width: 223px;
+    margin: auto;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 1.5em;
+    color: #555;
+}
+
+.conteudo-principal article .anuncios .anuncio-box p {
+    text-align: center;
+    line-height: 25px;
+    color: #9a9a9a;
+    margin-bottom: 1.5em;
+}
+
+.conteudo-principal article .anuncios .anuncio-box button {
+    padding: 0.8rem 2.7rem;
+    border: 3px solid var(--cor2);
+    border-radius: 30px;
+    margin: auto;
+    color: var(--cor2);
+    display: block;
+    background-color: transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.conteudo-principal article .anuncios .anuncio-box button:hover {
+    background-color: #6cc09048;
+    transition: .5s;
+}
+
+/* SEÇÃO FORMULÁRIO */
+.secao-form {
+    background-color: var(--cor2);
+    padding: 6em 0;
+}
+
+.secao-form form {} 
+
+.secao-form form h2 {
+    text-align: center;
+    color: var(--cor0);
+    font-weight: 400;
+    margin-bottom: 3rem;
+    font-size: 1.7em;
+} 
+
+.secao-form form .posicionamento-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 1.4rem;
+} 
+
+.secao-form form .posicionamento-form .input-box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+} 
+
+.secao-form form .posicionamento-form .input-box label {
+    color: var(--cor0);
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+    font-size: 0.9em;
+} 
+
+.secao-form form .posicionamento-form .input-box input {
+    background-color: transparent;
+    padding: 0.7rem 1.2rem;
+    border: 2px solid var(--cor1);
+    border-radius: 10px;
+    outline: none;
+} 
+
+.secao-form form .posicionamento-form .input-box input:focus-visible {
+    border-color: #4bae77;
+    box-shadow: 0 0 0 1px #4bae77;
+}
+
+.secao-form form .text-box {
+    margin-bottom: 2rem;
+} 
+
+.secao-form form .text-box label {
+    color: var(--cor0);
+    margin-bottom: 1.3rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+} 
+
+.secao-form form .text-box textarea {
+    border: 1px solid var(--cor3);
+    background-color: transparent;
+    width: 100%;
+    border: 2px solid var(--cor1);
+    outline: none;
+    border-radius: 10px;
+    padding: 1.2rem;
+} 
+
+.secao-form form .text-box textarea:focus-visible {
+    border-color: #4bae77;
+    box-shadow: 0 0 0 1px #4bae77;
+} 
+
+.secao-form form .posicionamento-form .input-box input::placeholder {
+    color: #abfacf;
+    font-weight: 400;
+}
+
+.secao-form form .text-box textarea::placeholder {
+    color: #abfacf;
+    font-weight: 400;
+}
+
+.secao-form form .button-box button{
+    padding: 0.8rem 2.7rem;
+    border: 3px solid var(--cor0);
+    border-radius: 30px;
+    margin: auto;
+    color: var(--cor0);
+    display: block;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+.secao-form form .button-box button:hover {
+    background-color: #86ebb2c0;
+    transition: .5s;
+}
+
+.secao-form form #button-especial {} 
+
+/* RODAPÉ */
+footer {
+    background-color: var(--cor2);
+}
+
+footer p {
+    padding-bottom: 2em;
+    text-align: center;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer p a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+footer p a:hover {
+    color: var(--cor0);
+}
+
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1279px){
+    
+    .cabecalho {}
+
+    .cabecalho-2 {
+        padding-bottom: 2.3rem;
+        margin-bottom: 6rem;
+    }
+
+    .secao-welcome h1 {
+        font-size: 3em;
+        margin-bottom: 3rem;
+    }
+
+    .secao-welcome .projeto-welcome {
+        margin-bottom: 3rem;
+        width: 82%;
+        margin: auto auto 4rem auto;
+    }
+
+    .secao-welcome .projeto-welcome .projeto h2 {
+        font-size: 1.2em;
+    }
+
+    .secao-welcome .projeto-welcome #especial-border {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+    .cabecalho {
+        background-attachment: unset;
+        padding: 2rem 0 3rem 0;
+        margin-bottom: 3rem;
+    }
+
+    .cabecalho-2 {
+        padding-bottom: 1.7rem;
+        margin-bottom: 3rem;
+    }
+
+    .secao-welcome h1 {
+        font-size: 2.5em;
+        margin-bottom: 2.3rem;
+    }
+
+    .secao-welcome .projeto-welcome {
+        margin-bottom: 3rem;
+        width: 41rem;
+        margin: auto auto 5rem auto;
+    }
+
+    .secao-welcome .projeto-welcome .projeto h2 {
+        font-size: 1em;
+    }
+
+    .secao-welcome .projeto-welcome .projeto p {
+        font-size: 0.9em;
+    }
+
+    .secao-welcome .projeto-welcome #especial-border {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .cabecalho-2 .menu .checkbtn {
+        display: block;
+        z-index: 2;
+        position: relative;
+    } 
+
+    .cabecalho-2 .menu #botao {}
+    
+    .cabecalho-2 .menu #botao:checked ~ .lista-menu {
+        right: 0;
+    } 
+
+    .cabecalho-2 .menu .lista-menu {
+        width: 20em;
+        background-color: var(--cor2);
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        display: flex;
+        z-index: 1;
+        padding-top: 0.5rem;
+        padding-left: 0.2rem;
+        flex-direction: column;
+        transition: all .5s;
+    }
+
+    .cabecalho-2 .menu .lista-menu .item-menu {
+        padding: 1rem 0 1rem 0;
+        margin: 0 1rem 0 1rem;
+    }
+
+    .cabecalho-2 .menu .lista-menu .item-menu a {
+        color: #daefe3;
+    }
+
+    .cabecalho-2 .menu .lista-menu #border {
+        border-top: 1px solid var(--cor1);
+        border-bottom: 1px solid var(--cor1);
+    }
+
+    .conteudo-principal article {
+        margin-bottom: 0;
+    }
+
+    .conteudo-principal article .anuncios {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudo-principal article .anuncios .anuncio-box {
+        margin-bottom: 4rem;
+        padding: 1rem;
+        width: 22rem;
+    }
+
+    .secao-form {
+        padding: 2em 0;
+    }
+
+    .secao-form form .posicionamento-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao-form form .posicionamento-form .input-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 726px) {
+    
+    .cabecalho-2 {
+        margin-bottom: 2rem;
+    }
+
+    .secao-welcome h1 {
+        font-size: 2em;
+    }
+
+    .secao-welcome .projeto-welcome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto auto 1rem auto;
+        width: 100%;
+    }
+
+    .secao-welcome .projeto-welcome .projeto {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    
+    .secao-welcome .projeto-welcome #especial-border {
+        border: none;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    
+    .secao-welcome .button-box button , .conteudo-principal article .anuncios .anuncio-box button, .secao-form form .button-box button {
+        width: 100%;
+    }
+}
