@@ -456,6 +456,7 @@ footer p a:hover {
         padding-left: 0.2rem;
         flex-direction: column;
         transition: all .5s;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.192);
     }
 
     .cabecalho-2 .menu .lista-menu .item-menu {
