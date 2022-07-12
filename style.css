@@ -18,7 +18,7 @@
     --cor1: #8dcca9;
     --cor2: #6cc091;
     --cor3: #4bae77;
-    --cor4: #ffffffbd;
+    --cor4: #ffffff8c;
 }
 
 /* CORPO */
@@ -34,12 +34,12 @@ body {
 /* CABEÇALHO */
 .cabecalho {
     position: relative;
-    padding: 3rem 0 7rem 0;
+    background-image: url('imagens/banner.jpg');
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
     background-attachment: fixed;
-    background-image: url('imagens/banner.jpg');
+    padding: 3rem 0 7rem 0;
     margin-bottom: 7rem;
 }
 
@@ -84,7 +84,6 @@ body {
 .cabecalho-2 .menu .checkbtn {}
 
 .cabecalho-2 .menu .checkbtn .fa {
-    display: block;
     font-size: 1.40em;
     color: white;
     margin-right: 1rem;
@@ -160,7 +159,7 @@ body {
 .secao-welcome .button-box {}
 
 .secao-welcome .button-box button {
-    padding: 0.9rem 3.4rem;
+    padding: 0.8rem 2.7rem;
     border: 3px solid var(--cor2);
     border-radius: 30px;
     margin: auto;
@@ -221,7 +220,7 @@ body {
 }
 
 .conteudo-principal article .anuncios .anuncio-box button {
-    padding: 0.9rem 3.4rem;
+    padding: 0.8rem 2.7rem;
     border: 3px solid var(--cor2);
     border-radius: 30px;
     margin: auto;
@@ -324,7 +323,7 @@ body {
 }
 
 .secao-form form .button-box button{
-    padding: 0.7rem 3.4em;
+    padding: 0.8rem 2.7rem;
     border: 3px solid var(--cor0);
     border-radius: 30px;
     margin: auto;
@@ -364,6 +363,83 @@ footer p a:hover {
 
 
 /* RESPONSIVIDADE */
-@media screen (max-width: 1280px) {
+@media screen and (max-width: 1279px){
     
+    .cabecalho {}
+
+    .cabecalho-2 {
+        padding-bottom: 2.3rem;
+        margin-bottom: 6rem;
+    }
+
+    .secao-welcome h1 {
+        font-size: 3em;
+        margin-bottom: 3rem;
+    }
+
+    .secao-welcome .projeto-welcome {
+        margin-bottom: 3rem;
+        width: 82%;
+        margin: auto auto 4rem auto;
+    }
+
+    .secao-welcome .projeto-welcome .projeto h2 {
+        font-size: 1.2em;
+    }
+
+    .secao-welcome .projeto-welcome #especial-border {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+    .cabecalho {
+        padding-top: 2rem;
+        background-attachment: unset;
+        padding: 3rem 0 5rem 0;
+    }
+
+    .cabecalho-2 {
+        padding-bottom: 1.7rem;
+        margin-bottom: 4rem;
+    }
+
+    .secao-welcome h1 {
+        font-size: 2.5em;
+        margin-bottom: 2rem;
+    }
+
+    .secao-welcome .projeto-welcome {
+        margin-bottom: 3rem;
+        width: 76%;
+        margin: auto auto 4rem auto;
+    }
+
+    .secao-welcome .projeto-welcome .projeto h2 {
+        font-size: 1em;
+    }
+
+    .secao-welcome .projeto-welcome .projeto p {
+        font-size: 0.9em;
+    }
+
+    .secao-welcome .projeto-welcome #especial-border {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .conteudo-principal article .anuncios {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudo-principal article .anuncios .anuncio-box {
+        margin-bottom: 4rem;
+        padding: 1rem;
+    }
+
 }
