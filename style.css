@@ -22,8 +22,9 @@
 }
 
 /* CORPO */
-body {
+html, body {
     font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    min-height: 100vh;
 }
 
 .container {
