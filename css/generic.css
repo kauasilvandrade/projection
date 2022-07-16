@@ -31,3 +31,284 @@ html, body {
     max-width: 88%;
     margin: auto;
 }
+
+/* CABEÇALHO */
+.cabecalho {
+    background-color: var(--cor2);
+    padding: 0.7rem;
+    position: fixed;
+    width: 100%;
+}
+
+/* POSICIONAMENTO H1 E NAV */
+.posicionamento-titulo-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.posicionamento-titulo-menu h1 {
+    color: var(--cor0);
+    font-size: 1rem;
+}
+
+.posicionamento-titulo-menu h1 span {
+    font-weight: lighter;
+}
+
+/* MENU */
+.menu {}
+
+/* BOTÃO MOBILE */
+.menu #botao {
+    display: none;
+}
+
+.menu .checkbtn {
+    float: right;
+    display: none;
+    margin-right: 1rem;
+}
+
+.menu .checkbtn .fa {
+    font-size: 1.40em;
+    color: white;
+}
+
+.menu .lista-links {
+    display: flex;
+    list-style: none;
+}
+
+.menu .lista-links .item-link {
+    padding: 0 0.8rem;
+}
+
+.menu .lista-links .item-link a {
+    text-decoration: none;
+    color: var(--cor0);
+    font-size: 1em;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.conteudo {}
+
+/* SEÇÃO AGORA */
+.secao-agora {
+    padding: 9rem 0;
+}
+
+.secao-agora h1 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.8em;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.secao-agora span {
+    text-align: center;
+    display: block;
+    font-size: 1em;
+    color: #bbb;
+    margin-bottom: 4rem;
+}
+
+.secao-agora .img-p {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.secao-agora .img-p figure {
+    padding-right: 1.6rem;
+}
+
+.secao-agora .img-p #img-2 {
+    padding-left: 1.6rem;
+}
+
+.secao-agora .img-p figure img {
+    border-radius: 50%;
+}
+
+
+.secao-agora p {
+    color: #9a9a9a;
+    line-height: 1.7rem;
+}
+
+/* SEÇÃO FORMULÁRIO */
+.secao-form {
+    background-color: var(--cor2);
+    padding: 6em 0;
+}
+
+.secao-form form {} 
+
+.secao-form form h2 {
+    text-align: center;
+    color: var(--cor0);
+    font-weight: 400;
+    margin-bottom: 3rem;
+    font-size: 1.7em;
+} 
+
+.secao-form form .posicionamento-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 1.4rem;
+} 
+
+.secao-form form .posicionamento-form .input-box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+} 
+
+.secao-form form .posicionamento-form .input-box label {
+    color: var(--cor0);
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+    font-size: 0.9em;
+} 
+
+.secao-form form .posicionamento-form .input-box input {
+    background-color: transparent;
+    padding: 0.7rem 1.2rem;
+    border: 2px solid var(--cor1);
+    border-radius: 10px;
+    outline: none;
+} 
+
+.secao-form form .posicionamento-form .input-box input:focus-visible {
+    border-color: #4bae77;
+    box-shadow: 0 0 0 1px #4bae77;
+}
+
+.secao-form form .text-box {
+    margin-bottom: 2rem;
+} 
+
+.secao-form form .text-box label {
+    color: var(--cor0);
+    margin-bottom: 1.3rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+} 
+
+.secao-form form .text-box textarea {
+    border: 1px solid var(--cor3);
+    background-color: transparent;
+    width: 100%;
+    border: 2px solid var(--cor1);
+    outline: none;
+    border-radius: 10px;
+    padding: 1.2rem;
+} 
+
+.secao-form form .text-box textarea:focus-visible {
+    border-color: #4bae77;
+    box-shadow: 0 0 0 1px #4bae77;
+} 
+
+.secao-form form .posicionamento-form .input-box input::placeholder {
+    color: #abfacf;
+    font-weight: 400;
+}
+
+.secao-form form .text-box textarea::placeholder {
+    color: #abfacf;
+    font-weight: 400;
+}
+
+.secao-form form .button-box button{
+    padding: 0.8rem 2.7rem;
+    border: 3px solid var(--cor0);
+    border-radius: 30px;
+    margin: auto;
+    color: var(--cor0);
+    display: block;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+.secao-form form .button-box button:hover {
+    background-color: #86ebb2c0;
+    transition: .5s;
+}
+
+.secao-form form #button-especial {} 
+
+/* RODAPÉ */
+footer {
+    background-color: var(--cor2);
+}
+
+footer p {
+    padding-bottom: 2em;
+    text-align: center;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer p a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+footer p a:hover {
+    color: var(--cor0);
+}
+
+@media screen and (max-width: 997px) {
+    .container {
+        max-width: 93%;
+    }
+
+    .secao-agora {
+        padding: 7rem 0;
+    }
+
+    .menu .checkbtn {
+        display: block;
+        z-index: 2;
+        position: relative;
+    } 
+
+    .menu #botao {}
+    
+    .menu #botao:checked ~ .lista-links {
+        right: 0;
+    } 
+
+    .menu .lista-links {
+        width: 20em;
+        background-color: var(--cor2);
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        display: flex;
+        z-index: 1;
+        padding-top: 0.5rem;
+        padding-left: 0.2rem;
+        flex-direction: column;
+        transition: all .5s;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.582);
+    }
+
+    .menu .lista-links .item-link {
+        padding: 1rem 0 1rem 0;
+        margin: 0 1rem 0 1rem;
+    }
+
+    .menu .lista-links .item-link a {
+        color: #daefe3;
+    }
+
+    .menu .lista-links #border {
+        border-top: 1px solid var(--cor1);
+        border-bottom: 1px solid var(--cor1);
+    }
+}
