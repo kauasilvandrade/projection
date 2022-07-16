@@ -326,5 +326,6 @@ footer p a:hover {
     .secao-form form .posicionamento-form .input-box {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 }
