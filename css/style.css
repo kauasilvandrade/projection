@@ -78,21 +78,41 @@ html, body {
 /* MENU */
 .cabecalho-2 .menu {}
 
-.cabecalho-2 .menu #botao {
+.cabecalho-2 .menu #botao-mark {
     display: none;
 }
 
-.cabecalho-2 .menu .checkbtn {
+.cabecalho-2 .menu .checkbtn-mark {
     float: right;
     display: none;
     margin-right: 1rem;
+    background-color: transparent;
+    border: none;
 }
 
-.cabecalho-2 .menu .checkbtn .fa {
+.cabecalho-2 .menu .checkbtn-mark .fa {
     font-size: 1.40em;
     color: white;
 }
 
+.cabecalho-2 .menu #botao-off {
+    display: none;
+}
+
+.cabecalho-2 .menu .checkbtn-off {
+    float: right;
+    display: none;
+    margin-right: 1rem;
+    position: fixed;
+    z-index: 2;
+    top: 1rem;
+    left: 37rem;
+}
+
+.cabecalho-2 .menu .checkbtn-off .fa-solid {
+    font-size: 1.70em;
+    color: white;
+}
 
 .cabecalho-2 .menu .lista-menu {
     list-style: none;
@@ -436,17 +456,27 @@ footer p a:hover {
         padding-right: 1rem;
     }
 
-    .cabecalho-2 .menu .checkbtn {
+    .cabecalho-2 .menu .checkbtn-mark {
         display: block;
-        z-index: 2;
         position: relative;
     } 
 
-    .cabecalho-2 .menu #botao {}
-    
-    .cabecalho-2 .menu #botao:checked ~ .lista-menu {
+    .cabecalho-2 .menu .checkbtn-mark:focus~ .checkbtn-off {
+        display: block;
+    } 
+
+    .cabecalho-2 .menu .checkbtn-mark:focus ~ .lista-menu {
         right: 0;
     } 
+
+    .cabecalho-2 .menu #botao-off:checked ~ .lista-menu {
+        right: -100%;
+    } 
+    
+    .cabecalho-2 .menu .checkbtn-off .fa-solid {
+        font-size: 1.70em;
+        color: white;
+    }
 
     .cabecalho-2 .menu .lista-menu {
         width: 20em;
