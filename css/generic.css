@@ -114,20 +114,22 @@ html, body {
 }
 
 .secao-agora .img-p {
-    display: flex;
     margin-bottom: 1.5rem;
 }
 
 .secao-agora .img-p figure {
     padding-right: 1.6rem;
+    float: left;
 }
 
 .secao-agora .img-p #img-2 {
     padding-left: 1.6rem;
+    float: right;
 }
 
 .secao-agora .img-p figure img {
     border-radius: 50%;
+    width: 100%;
 }
 
 
@@ -310,5 +312,20 @@ footer p a:hover {
     .menu .lista-links #border {
         border-top: 1px solid var(--cor1);
         border-bottom: 1px solid var(--cor1);
+    }
+
+    .secao-form {
+        padding: 2em 0;
+    }
+
+    .secao-form form .posicionamento-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao-form form .posicionamento-form .input-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 }
