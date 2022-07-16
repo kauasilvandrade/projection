@@ -23,7 +23,7 @@
 
 /* CORPO */
 html, body {
-    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
     min-height: 100vh;
 }
 
@@ -35,7 +35,7 @@ html, body {
 /* CABEÇALHO */
 .cabecalho {
     position: relative;
-    background-image: url('imagens/banner.jpg');
+    background-image: url('../imagens/banner.jpg');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -106,6 +106,10 @@ html, body {
 .cabecalho-2 .menu .lista-menu .item-menu a {
     text-decoration: none;
     color: var(--cor0);
+}
+
+.cabecalho-2 .menu .lista-menu .item-menu a:hover {
+    color: var(--cor3);
 }
 
 /* SEÇÃO WELCOME */
