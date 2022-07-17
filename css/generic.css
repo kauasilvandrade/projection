@@ -63,15 +63,25 @@ html, body {
     display: none;
 }
 
-.menu .checkbtn {
-    float: right;
-    display: none;
-    margin-right: 1rem;
-}
+.menu .checkbtn {}
 
 .menu .checkbtn .fa {
     font-size: 1.40em;
     color: white;
+    float: right;
+    margin-right: 1rem;
+    display: none;
+}
+
+.menu .checkbtn .fa-solid{
+    font-size: 1.70em;
+    color: white;
+    z-index: 2;
+    position: fixed;
+    top: 0.5rem;
+    right: 1rem;
+    transition: all .5s;
+    opacity: 0;
 }
 
 .menu .lista-links {
@@ -87,6 +97,10 @@ html, body {
     text-decoration: none;
     color: var(--cor0);
     font-size: 1em;
+}
+
+.menu .lista-links .item-link a:hover {
+    color: var(--cor3);
 }
 
 /* CONTEÚDO PRINCIPAL */
@@ -272,17 +286,17 @@ footer p a:hover {
         padding: 7rem 0;
     }
 
-    .menu .checkbtn {
+    .menu .checkbtn .fa {
         display: block;
-        z-index: 2;
-        position: relative;
     } 
-
-    .menu #botao {}
     
     .menu #botao:checked ~ .lista-links {
         right: 0;
     } 
+
+    .menu #botao:checked + .checkbtn .fa-solid {
+        opacity: 1;
+    }
 
     .menu .lista-links {
         width: 20em;
