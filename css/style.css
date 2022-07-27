@@ -195,28 +195,25 @@ html, body {
 
 .conteudo-principal article {
     margin-bottom: 7rem;
-}
-
-.conteudo-principal article .anuncios {
     display: flex;
     justify-content: space-around;
 }
 
-.conteudo-principal article .anuncios .anuncio-box  {
+.conteudo-principal article .anuncio-box  {
     width: 23rem;
 }
 
-.conteudo-principal article .anuncios .anuncio-box .imagem-box {
+.conteudo-principal article .anuncio-box .imagem-box {
     margin-bottom: 1.5rem;
 }
 
-.conteudo-principal article .anuncios .anuncio-box .imagem-box img {
+.conteudo-principal article .anuncio-box .imagem-box img {
     margin: auto;
     display: block;
     border-radius: 50%;
 }
 
-.conteudo-principal article .anuncios .anuncio-box h3 {
+.conteudo-principal article .anuncio-box h3 {
     font-size: 1.8em;
     text-align: center;
     max-width: 223px;
@@ -227,14 +224,14 @@ html, body {
     color: #555;
 }
 
-.conteudo-principal article .anuncios .anuncio-box p {
+.conteudo-principal article .anuncio-box p {
     text-align: center;
     line-height: 25px;
     color: #9a9a9a;
     margin-bottom: 1.5em;
 }
 
-.conteudo-principal article .anuncios .anuncio-box button {
+.conteudo-principal article .anuncio-box button {
     padding: 0.8rem 2.7rem;
     border: 3px solid var(--cor2);
     border-radius: 30px;
@@ -246,7 +243,7 @@ html, body {
     text-transform: uppercase;
 }
 
-.conteudo-principal article .anuncios .anuncio-box button:hover {
+.conteudo-principal article .anuncio-box button:hover {
     background-color: #6cc09048;
     transition: .5s;
 }
@@ -491,14 +488,14 @@ footer p a:hover {
         margin-bottom: 0;
     }
 
-    .conteudo-principal article .anuncios {
+    .conteudo-principal article{
         display: flex;
         justify-content: space-around;
         flex-direction: column;
         align-items: center;
     }
 
-    .conteudo-principal article .anuncios .anuncio-box {
+    .conteudo-principal article .anuncio-box {
         margin-bottom: 4rem;
         padding: 1rem;
         width: 22rem;
