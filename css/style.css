@@ -549,7 +549,7 @@ footer p a:hover {
 
 @media screen and (max-width: 450px) {
     
-    .secao-welcome .button-box button , .conteudo-principal article .anuncios .anuncio-box button, .secao-form form .button-box button {
+    .secao-welcome .button-box button , .conteudo-principal article .anuncio-box button, .secao-form form .button-box button {
         width: 100%;
     }
 }
