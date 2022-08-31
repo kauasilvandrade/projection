@@ -238,7 +238,7 @@ html, body {
     font-weight: 400;
 }
 
-.secao-form form .button-box button{
+.secao-form form .button-box input{
     padding: 0.8rem 2.7rem;
     border: 3px solid var(--cor0);
     border-radius: 30px;
@@ -250,7 +250,7 @@ html, body {
     margin-bottom: 2rem;
     text-transform: uppercase;
 }
-.secao-form form .button-box button:hover {
+.secao-form form .button-box input:hover {
     background-color: #86ebb2c0;
     transition: .5s;
 }

@@ -173,8 +173,8 @@ html, body {
 
 .secao-welcome .button-box {}
 
-.secao-welcome .button-box button {
-    padding: 0.8rem 2.7rem;
+.secao-welcome .button-box a {
+    padding: 0.6rem 2.7rem;
     border: 3px solid var(--cor2);
     border-radius: 30px;
     margin: auto;
@@ -182,10 +182,12 @@ html, body {
     display: block;
     background-color: transparent;
     cursor: pointer;
+    width: 184px;
+    text-decoration: none;
     text-transform: uppercase;
 }
 
-.secao-welcome .button-box button:hover {
+.secao-welcome .button-box a:hover {
     background-color: #6cc0902f;
     transition: .5s;
 }
@@ -231,8 +233,8 @@ html, body {
     margin-bottom: 1.5em;
 }
 
-.conteudo-principal article .anuncio-box button {
-    padding: 0.8rem 2.7rem;
+.conteudo-principal article .anuncio-box a {
+    padding: 0.6rem 2.7rem;
     border: 3px solid var(--cor2);
     border-radius: 30px;
     margin: auto;
@@ -240,10 +242,12 @@ html, body {
     display: block;
     background-color: transparent;
     cursor: pointer;
+    width: 184px;
+    text-decoration: none;
     text-transform: uppercase;
 }
 
-.conteudo-principal article .anuncio-box button:hover {
+.conteudo-principal article .anuncio-box a:hover {
     background-color: #6cc09048;
     transition: .5s;
 }
@@ -334,7 +338,7 @@ html, body {
     font-weight: 400;
 }
 
-.secao-form form .button-box button{
+.secao-form form .button-box input{
     padding: 0.8rem 2.7rem;
     border: 3px solid var(--cor0);
     border-radius: 30px;
@@ -346,7 +350,8 @@ html, body {
     margin-bottom: 2rem;
     text-transform: uppercase;
 }
-.secao-form form .button-box button:hover {
+
+.secao-form form .button-box input:hover {
     background-color: #86ebb2c0;
     transition: .5s;
 }

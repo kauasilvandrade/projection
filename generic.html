@@ -131,46 +131,51 @@
 
                     <!-- FORMULARIO -->
                     <form action="#">
-
-                        <!-- TÍTULO -->
-                        <h2>Get in touch</h2>
-
-                        <!-- POSICIONAMENTO -->
-                        <div class="posicionamento-form">
-
-                            <div class="input-box">
-
-                                <label for="name">Name</label>
-
-                                <input type="text" name="name" id="name" required placeholder="Name">
-
+                
+                        <!-- CONTAINER -->
+                        <div class="container">
+        
+                            <!-- TÍTULO -->
+                            <h2>Get in touch</h2>
+        
+                            <!-- POSICIONAMENTO -->
+                            <div class="posicionamento-form">
+        
+                                <div class="input-box">
+        
+                                    <label for="name">Name</label>
+        
+                                    <input type="text" name="name" id="name" required placeholder="Name" autocomplete="username" minlength="5" maxlength="20">
+        
+                                </div>
+        
+                                <div class="input-box">
+        
+                                    <label for="email">Email</label>
+        
+                                    <input type="email" name="email" id="email" required placeholder="Email" autocomplete="email">
+        
+                                </div>
+        
                             </div>
-
-                            <div class="input-box">
-
-                                <label for="email">Email</label>
-
-                                <input type="email" name="email" id="email" required placeholder="Email">
-
+        
+                            <!-- TEXT AREA -->
+                            <div class="posicionamento-text-area">
+                                <div class="text-box">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                </div>
                             </div>
-
-                        </div>
-
-                        <!-- TEXT AREA -->
-                        <div class="posicionamento-text-area">
-                            <div class="text-box">
-                                <label for="message">Message</label>
-                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                            </div>
-                        </div>
-                        
-                        <!-- BOTÃO -->
-                        <div class="button-box">
                             
-                            <button type="button" id="button-especial">Send Message</button>
+                            <!-- BOTÃO -->
+                            <div class="button-box">
+                                
+                                <input type="submit" value="Send Message">
+        
+                            </div>
         
                         </div>
-
+        
                     </form>
 
                 </div>
@@ -179,6 +184,8 @@
                 <footer>
 
                     <div class="container">
+
+                        <p>Desenvolvido por <a href="https://github.com/kauasilvandrade" target="_blank">Kauã</a></p>
             
                         <p>&copy; Untitled. Design: <a href="#">TEMPLATED</a>. Images: <a href="#">Unsplash</a>.</p>
             
