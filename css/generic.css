@@ -168,27 +168,31 @@ html, body {
     font-size: 1.7em;
 } 
 
-.secao-form form .posicionamento-form {
+.secao-form form fieldset.nome-email {
+    border: none;
+} 
+
+.secao-form form fieldset.nome-email {
     display: flex;
     justify-content: space-between;
     gap: 40px;
     margin-bottom: 1.4rem;
 } 
 
-.secao-form form .posicionamento-form .input-box {
+.secao-form form fieldset.nome-email .input-box {
     display: flex;
     flex-direction: column;
     width: 50%;
 } 
 
-.secao-form form .posicionamento-form .input-box label {
+.secao-form form fieldset.nome-email .input-box label {
     color: var(--cor0);
     font-weight: 600;
     margin-bottom: 1.3rem;
     font-size: 0.9em;
 } 
 
-.secao-form form .posicionamento-form .input-box input {
+.secao-form form fieldset.nome-email .input-box input {
     background-color: transparent;
     padding: 0.7rem 1.2rem;
     border: 2px solid var(--cor1);
@@ -196,7 +200,7 @@ html, body {
     outline: none;
 } 
 
-.secao-form form .posicionamento-form .input-box input:focus-visible {
+.secao-form form fieldset.nome-email .input-box input:focus-visible {
     border-color: #4bae77;
     box-shadow: 0 0 0 1px #4bae77;
 }
@@ -228,7 +232,7 @@ html, body {
     box-shadow: 0 0 0 1px #4bae77;
 } 
 
-.secao-form form .posicionamento-form .input-box input::placeholder {
+.secao-form form fieldset.nome-email .input-box input::placeholder {
     color: #abfacf;
     font-weight: 400;
 }
@@ -277,7 +281,7 @@ footer p a:hover {
     color: var(--cor0);
 }
 
-@media screen and (max-width: 997px) {
+@media screen and (max-width: 992px) {
     .container {
         max-width: 93%;
     }
@@ -310,8 +314,8 @@ footer p a:hover {
         padding-top: 0.5rem;
         padding-left: 0.2rem;
         flex-direction: column;
-        transition: all .5s;
         box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.582);
+        transition: all .5s;
     }
 
     .menu .lista-links .item-link {
@@ -332,14 +336,20 @@ footer p a:hover {
         padding: 2em 0;
     }
 
-    .secao-form form .posicionamento-form {
+    .secao-form form fieldset.nome-email {
         flex-direction: column;
         align-items: center;
     }
 
-    .secao-form form .posicionamento-form .input-box {
+    .secao-form form fieldset.nome-email .input-box {
         display: flex;
         flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .secao-form form .button-box input {
         width: 100%;
     }
 }

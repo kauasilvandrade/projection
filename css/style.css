@@ -76,15 +76,15 @@ html, body {
 }
 
 /* MENU */
-.cabecalho-2 .menu {}
+.menu {}
 
-.cabecalho-2 .menu #botao {
+.menu #botao {
     display: none;
 }
 
-.cabecalho-2 .menu .checkbtn {}
+.menu .checkbtn {}
 
-.cabecalho-2 .menu .checkbtn .fa {
+.menu .checkbtn .fa {
     font-size: 1.40em;
     color: white;
     float: right;
@@ -92,7 +92,7 @@ html, body {
     display: none;
 }
 
-.cabecalho-2 .menu .checkbtn .fa-solid{
+.menu .checkbtn .fa-solid{
     font-size: 1.70em;
     color: white;
     z-index: 2;
@@ -103,21 +103,21 @@ html, body {
     transition: all .5s;
 }
 
-.cabecalho-2 .menu .lista-menu {
+.menu .lista-menu {
     list-style: none;
     display: flex;
 }
 
-.cabecalho-2 .menu .lista-menu .item-menu {
+.menu .lista-menu .item-menu {
     padding: 0 1rem;
 }
 
-.cabecalho-2 .menu .lista-menu .item-menu a {
+.menu .lista-menu .item-menu a {
     text-decoration: none;
     color: var(--cor0);
 }
 
-.cabecalho-2 .menu .lista-menu .item-menu a:hover {
+.menu .lista-menu .item-menu a:hover {
     color: var(--cor3);
 }
 
@@ -258,9 +258,9 @@ html, body {
     padding: 6em 0;
 }
 
-.secao-form form {} 
+form {} 
 
-.secao-form form h2 {
+form h2 {
     text-align: center;
     color: var(--cor0);
     font-weight: 400;
@@ -268,27 +268,31 @@ html, body {
     font-size: 1.7em;
 } 
 
-.secao-form form .posicionamento-form {
+form fieldset.nome-email {
+    border: none;
+} 
+
+form fieldset.nome-email {
     display: flex;
     justify-content: space-between;
     gap: 40px;
     margin-bottom: 1.4rem;
 } 
 
-.secao-form form .posicionamento-form .input-box {
+form fieldset.nome-email .input-box {
     display: flex;
     flex-direction: column;
     width: 50%;
 } 
 
-.secao-form form .posicionamento-form .input-box label {
+form fieldset.nome-email .input-box label {
     color: var(--cor0);
     font-weight: 600;
     margin-bottom: 1.3rem;
     font-size: 0.9em;
 } 
 
-.secao-form form .posicionamento-form .input-box input {
+form fieldset.nome-email .input-box input {
     background-color: transparent;
     padding: 0.7rem 1.2rem;
     border: 2px solid var(--cor1);
@@ -296,16 +300,16 @@ html, body {
     outline: none;
 } 
 
-.secao-form form .posicionamento-form .input-box input:focus-visible {
+form fieldset.nome-email .input-box input:focus-visible {
     border-color: #4bae77;
     box-shadow: 0 0 0 1px #4bae77;
 }
 
-.secao-form form .text-box {
+form .text-box {
     margin-bottom: 2rem;
 } 
 
-.secao-form form .text-box label {
+form .text-box label {
     color: var(--cor0);
     margin-bottom: 1.3rem;
     font-weight: 600;
@@ -313,7 +317,7 @@ html, body {
     flex-direction: column;
 } 
 
-.secao-form form .text-box textarea {
+form .text-box textarea {
     border: 1px solid var(--cor3);
     background-color: transparent;
     width: 100%;
@@ -323,22 +327,22 @@ html, body {
     padding: 1.2rem;
 } 
 
-.secao-form form .text-box textarea:focus-visible {
+form .text-box textarea:focus-visible {
     border-color: #4bae77;
     box-shadow: 0 0 0 1px #4bae77;
 } 
 
-.secao-form form .posicionamento-form .input-box input::placeholder {
+form fieldset.nome-email .input-box input::placeholder {
     color: #abfacf;
     font-weight: 400;
 }
 
-.secao-form form .text-box textarea::placeholder {
+form .text-box textarea::placeholder {
     color: #abfacf;
     font-weight: 400;
 }
 
-.secao-form form .button-box input{
+form .button-box input{
     padding: 0.8rem 2.7rem;
     border: 3px solid var(--cor0);
     border-radius: 30px;
@@ -351,7 +355,7 @@ html, body {
     text-transform: uppercase;
 }
 
-.secao-form form .button-box input:hover {
+form .button-box input:hover {
     background-color: #86ebb2c0;
     transition: .5s;
 }
@@ -380,7 +384,7 @@ footer p a:hover {
 
 
 /* RESPONSIVIDADE */
-@media screen and (max-width: 1279px){
+@media screen and (max-width: 1200px){
     
     .cabecalho {}
 
@@ -411,7 +415,8 @@ footer p a:hover {
 
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 992px) {
+
     .cabecalho {
         background-attachment: unset;
         padding: 2rem 0 3rem 0;
@@ -471,8 +476,8 @@ footer p a:hover {
         padding-top: 0.5rem;
         padding-left: 0.2rem;
         flex-direction: column;
-        transition: all .5s;
         box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.582);
+        transition: all .5s;
     }
 
     .cabecalho-2 .menu .lista-menu .item-menu {
@@ -482,6 +487,7 @@ footer p a:hover {
 
     .cabecalho-2 .menu .lista-menu .item-menu a {
         color: #daefe3;
+        font-size: 1.2em;
     }
 
     .cabecalho-2 .menu .lista-menu #border {
@@ -493,7 +499,7 @@ footer p a:hover {
         margin-bottom: 0;
     }
 
-    .conteudo-principal article{
+    .conteudo-principal article {
         display: flex;
         justify-content: space-around;
         flex-direction: column;
@@ -510,12 +516,12 @@ footer p a:hover {
         padding: 2em 0;
     }
 
-    .secao-form form .posicionamento-form {
+    .secao-form form fieldset.nome-email {
         flex-direction: column;
         align-items: center;
     }
 
-    .secao-form form .posicionamento-form .input-box {
+    .secao-form form fieldset.nome-email .input-box {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -523,7 +529,7 @@ footer p a:hover {
 
 }
 
-@media screen and (max-width: 726px) {
+@media screen and (max-width: 768px) {
     
     .cabecalho-2 {
         margin-bottom: 2rem;
@@ -552,9 +558,10 @@ footer p a:hover {
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 505px) {
     
-    .secao-welcome .button-box button , .conteudo-principal article .anuncio-box button, .secao-form form .button-box button {
+    .secao-welcome .button-box a , .conteudo-principal article .anuncio-box a , form .button-box input {
         width: 100%;
+        text-align: center;
     }
 }
