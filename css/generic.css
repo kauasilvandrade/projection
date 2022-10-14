@@ -46,8 +46,9 @@ html, body {
     justify-content: space-between;
 }
 
-.posicionamento-titulo-menu h1 {
+.posicionamento-titulo-menu a {
     color: var(--cor0);
+    text-decoration: none;
     font-size: 1rem;
 }
 
@@ -58,48 +59,51 @@ html, body {
 /* MENU */
 .menu {}
 
-/* BOTÃO MOBILE */
-.menu #botao {
+.menu .btn-abrir-menu {
     display: none;
+    background-color: transparent;
+    border: none;
 }
 
-.menu .checkbtn {}
+.menu .btn-fechar-menu {
+    background-color: transparent;
+    border: none;
+}
 
-.menu .checkbtn .fa {
-    font-size: 1.40em;
+.menu .btn-abrir-menu .fa {
+    font-size: 2.2em;
     color: white;
     float: right;
     margin-right: 1rem;
-    display: none;
+    cursor: pointer;
 }
 
-.menu .checkbtn .fa-solid{
-    font-size: 1.70em;
+.menu .btn-fechar-menu .fa-solid {
+    font-size: 2.2em;
     color: white;
-    z-index: 2;
+    z-index: 3;
     position: fixed;
-    top: 0.5rem;
-    right: 1rem;
-    transition: all .5s;
-    opacity: 0;
+    top: 1rem;
+    cursor: pointer;
+    right: -100%;
+    transition: .5s;
 }
 
-.menu .lista-links {
-    display: flex;
+.menu .lista-menu {
     list-style: none;
+    display: flex;
 }
 
-.menu .lista-links .item-link {
-    padding: 0 0.8rem;
+.menu .lista-menu .item-menu {
+    padding: 0 1rem;
 }
 
-.menu .lista-links .item-link a {
+.menu .lista-menu .item-menu a {
     text-decoration: none;
     color: var(--cor0);
-    font-size: 1em;
 }
 
-.menu .lista-links .item-link a:hover {
+.menu .lista-menu .item-menu a:hover {
     color: var(--cor3);
 }
 
@@ -290,19 +294,20 @@ footer p a:hover {
         padding: 7rem 0;
     }
 
-    .menu .checkbtn .fa {
+    /* BOTÃO MENU */
+    .menu .btn-abrir-menu {
         display: block;
-    } 
+    }
     
-    .menu #botao:checked ~ .lista-links {
-        right: 0;
-    } 
-
-    .menu #botao:checked + .checkbtn .fa-solid {
-        opacity: 1;
+    .menu .btn-fechar-menu .fa-solid.active {
+        right: 1rem;
     }
 
-    .menu .lista-links {
+    .menu .lista-menu.active {
+        right: 0;
+    }
+
+    .menu .lista-menu {
         width: 20em;
         background-color: var(--cor2);
         position: fixed;
@@ -318,16 +323,17 @@ footer p a:hover {
         transition: all .5s;
     }
 
-    .menu .lista-links .item-link {
-        padding: 1rem 0 1rem 0;
-        margin: 0 1rem 0 1rem;
-    }
+    .menu .lista-menu .item-menu {}
 
-    .menu .lista-links .item-link a {
+    .menu .lista-menu .item-menu a {
         color: #daefe3;
+        font-size: 1.2em;
+        display: block;
+        padding: 1rem 0 1rem 0;
+        width: 100%;
     }
 
-    .menu .lista-links #border {
+    .menu .lista-menu .item-menu a#border {
         border-top: 1px solid var(--cor1);
         border-bottom: 1px solid var(--cor1);
     }

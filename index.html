@@ -31,15 +31,17 @@
                 <nav class="menu">
 
                     <!-- BOTÃO MOBILE -->
-                    <input type="checkbox" id="botao">
-
-                    <label for="botao" class="checkbtn">
+                    <button class="btn-abrir-menu">
 
                         <i class="fa fa-bars"></i>
 
+                    </button>
+
+                    <button class="btn-fechar-menu" onclick="fecharMenu()">
+
                         <i class="fa-solid fa-xmark"></i>
 
-                    </label>
+                    </button>
 
                     <!-- LISTA DE LINKS -->
                     <ul class="lista-menu">
@@ -51,9 +53,9 @@
 
                         </li>
 
-                        <li class="item-menu" id="border">
+                        <li class="item-menu">
 
-                            <a href="generic.html" rel="next">Generic</a>
+                            <a href="generic.html" rel="next" id="border">Generic</a>
 
                         </li>
 
@@ -264,6 +266,8 @@
         </section>
 
     </main>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>

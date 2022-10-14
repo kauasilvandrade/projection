@@ -20,39 +20,41 @@
             <div class="posicionamento-titulo-menu">
 
                 <!-- TÍTULO -->
-                <h1>Projection <span>by TEMPLATED</span></h1>
+                <a href="index.html">Projection <span>by TEMPLATED</span></a>
 
                 <!-- MENU -->
                 <nav class="menu">
 
                     <!-- BOTÃO MOBILE -->
-                    <input type="checkbox" id="botao">
-
-                    <label for="botao" class="checkbtn">
+                    <button class="btn-abrir-menu">
 
                         <i class="fa fa-bars"></i>
 
+                    </button>
+
+                    <button class="btn-fechar-menu" onclick="fecharMenu()">
+
                         <i class="fa-solid fa-xmark"></i>
 
-                    </label>
+                    </button>
 
                     <!-- LISTA DE LINKS -->
-                    <ul class="lista-links">
+                    <ul class="lista-menu">
 
                         <!-- ITEM -->
-                        <li class="item-link">
+                        <li class="item-menu">
 
                             <a href="index.html" rel="prev">Home</a>
 
                         </li>
 
-                        <li class="item-link" id="border">
+                        <li class="item-menu">
 
-                            <a href="#">Generic</a>
+                            <a href="#" id="border">Generic</a>
 
                         </li>
 
-                        <li class="item-link">
+                        <li class="item-menu">
 
                             <a href="elements.html" rel="next">Elements</a>
 
@@ -192,6 +194,8 @@
         </section>
 
     </main>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>
