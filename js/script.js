@@ -3,6 +3,13 @@ const btnFecharMenu = document.querySelector('.fa-solid');
 const Menu = document.querySelector('.lista-menu');
 
 // MUDAR TAMANHO DE TELA
+function mudouTamanho() {
+    if (
+        Menu.classList.contains('active'), btnFecharMenu.classList.contains('active')) {
+        Menu.classList.remove('active');
+        btnFecharMenu.classList.remove('active');
+    }
+}
 
 // ABRIR MENU 
 btnAbrirMenu.addEventListener('click', () => {

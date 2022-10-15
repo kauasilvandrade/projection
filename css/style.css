@@ -78,6 +78,7 @@ html, body {
 /* MENU */
 .menu {}
 
+/* BOTÕES ABRIR E FECHAR MENU */
 .menu .btn-abrir-menu {
     display: none;
     background-color: transparent;
@@ -87,6 +88,7 @@ html, body {
 .menu .btn-fechar-menu {
     background-color: transparent;
     border: none;
+    display: none;
 }
 
 .menu .btn-abrir-menu .fa {
@@ -120,6 +122,31 @@ html, body {
 .menu .lista-menu .item-menu a {
     text-decoration: none;
     color: var(--cor0);
+}
+
+.menu .lista-menu .item-menu .underline::before {
+    content: '';
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 2px;
+    bottom: -2px;
+}
+
+.menu .lista-menu .item-menu .underline::after {
+    content: '';
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 2px;
+    background-image: linear-gradient(to right, var(--cor3), var(--cor1));
+    transition: .3s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.menu .lista-menu .item-menu a:hover ~ .underline::after {
+    transform: scaleX(1);
 }
 
 .menu .lista-menu .item-menu a:hover {
@@ -461,9 +488,14 @@ footer p a:hover {
     .menu .btn-abrir-menu {
         display: block;
     }
-    
-    .menu .btn-fechar-menu.active {
-        right: 1rem;
+
+    .menu .btn-fechar-menu {
+        display: block;
+    }
+
+    /* class ativada com javascript */
+    .menu .btn-fechar-menu .fa.active {
+        display: block;
     }
 
     .menu .btn-fechar-menu .fa-solid.active {
@@ -500,9 +532,18 @@ footer p a:hover {
         width: 100%;
     }
 
+    .menu .lista-menu .item-menu .underline {
+        display: none;
+    }
+
     .cabecalho-2 .menu .lista-menu .item-menu a#border {
         border-top: 1px solid var(--cor1);
         border-bottom: 1px solid var(--cor1);
+    }
+
+    .menu .lista-menu .item-menu a:hover {
+        color: var(--cor3);
+        transition: .5s;
     }
 
     .conteudo-principal article {
